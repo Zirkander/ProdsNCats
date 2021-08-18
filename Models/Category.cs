@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ProdsNCats.Models
@@ -13,6 +14,7 @@ namespace ProdsNCats.Models
         public string CategoryName { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
+        public int ProductId { get; set; }
         public List<CatProd> Categories { get; set; }
     }
 }
