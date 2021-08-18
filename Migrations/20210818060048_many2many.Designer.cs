@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProdsNCats.Models;
 
 namespace ProdsNCats.Migrations
 {
     [DbContext(typeof(ProdsNCatsContext))]
-    partial class ProdsNCatsContextModelSnapshot : ModelSnapshot
+    [Migration("20210818060048_many2many")]
+    partial class many2many
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

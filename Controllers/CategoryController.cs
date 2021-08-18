@@ -20,10 +20,24 @@ namespace ProdsNCats.Controllers
             db = context;
         }
 
-        // [HttpGet("")]
-        // public IActionResult Redirect()
-        // {
-        //     return RedirectToAction("Index");
-        // }
+        [HttpGet("Categories")]
+        public IActionResult Category()
+        {
+            List<Category> allCategories = db.Categories
+            .ToList();
+            return View("Categories", allCategories);
+        }
+
+        [HttpPost("/Categories/AddCategory")]
+        public IActionResult AddCategory(Category newCategory)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return RedirectToAction("Categories");
+            }
+            db.Add(newCategory);
+            db.SaveChanges();
+            return RedirectToAction("Categories");
+        }
     }
 }

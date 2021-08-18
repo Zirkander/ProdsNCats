@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\Coding Dojo\\C#\\Asp\\ProdsNCats\\Views\\Product\\Products.cshtml",
+      "TargetPath": "Views\\Product\\Products.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Coding Dojo\\C#\\Asp\\ProdsNCats\\Views\\Product\\Product.cshtml",
       "TargetPath": "Views\\Product\\Product.cshtml",
       "FileKind": "mvc"
@@ -15631,6 +15636,11 @@
     {
       "FilePath": "e:\\Coding Dojo\\C#\\Asp\\ProdsNCats\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Coding Dojo\\C#\\Asp\\ProdsNCats\\Views\\Category\\Categories.cshtml",
+      "TargetPath": "Views\\Category\\Categories.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15661,6 +15671,11 @@
     {
       "FilePath": "e:\\Coding Dojo\\C#\\Asp\\ProdsNCats\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Coding Dojo\\C#\\Asp\\ProdsNCats\\Views\\Category\\_NewCategory.cshtml",
+      "TargetPath": "Views\\Category\\_NewCategory.cshtml",
       "FileKind": "mvc"
     }
   ],

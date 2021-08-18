@@ -1,0 +1,35 @@
+@model List<Category>
+
+<body>
+    <div style="Display: flex; justify-content: center;">
+        <h1><a href="/Products">Products</a> | Categories</h1>
+    </div>
+    <div style="display: flex;">
+        <div>
+            <h4>New Category</h4>
+            <div
+                style="Display: flex; Flex-direction: column; justify-content: center; width: 450px; height: 150px; margin-top: 50px;">
+                <partial name="_NewCategory" model="new Category {}"></partial><br>
+            </div>
+            <div
+                style="Display: flex; Flex-direction: column; justify-content: center; margin-top: 50px; border-left: 2px solid black;">
+                <h4 style="margin-left: 50px;">Existing Categories</h4>
+                <div style="margin-left: 50px;">
+                    <hr>
+                    <tbody>
+                        <tr>
+                            @foreach (var cat in @Model)
+                            {
+                                <td>@cat.CategoryName</td>
+                                <hr>
+                            }
+                        </tr>
+                    </tbody>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

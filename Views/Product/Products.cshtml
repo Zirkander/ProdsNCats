@@ -1,0 +1,33 @@
+@model List<Product>
+
+<body>
+    <div style="Display: flex; justify-content: center;">
+        <h1>Products | <a href="/Categories">Categories</a></h1>
+    </div>
+    <div style="display: flex;">
+        <h4>New Product</h4>
+        <div
+            style="Display: flex; Flex-direction: column; justify-content: center; width: 450px; height: 150px; margin-top: 50px;">
+            <partial name="_NewProduct" model="new Product {}"></partial><br>
+        </div>
+        <div
+            style="Display: flex; Flex-direction: column; justify-content: center; margin-top: 50px;border-left: 2px solid black; margin-left: -140px;">
+            <h4 style="margin-left: 50px;">Existing Products</h4>
+            <div style="margin-left: 50px;">
+                <hr>
+                <tbody>
+                    <tr>
+                        @foreach (var prod in @Model)
+                        {
+                            <td>@prod.ProductName</td>
+                            <hr>
+                        }
+                    </tr>
+                </tbody>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

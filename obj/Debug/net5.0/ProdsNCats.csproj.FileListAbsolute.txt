@@ -47,5 +47,8 @@ E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\ProdsNCats.dll
 E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\ref\ProdsNCats.dll
 E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\ProdsNCats.pdb
 E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\ProdsNCats.genruntimeconfig.cache
-E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\Razor\Views\Product\Product.cshtml.g.cs
 E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\Razor\Views\Product\_NewProduct.cshtml.g.cs
+E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\Razor\Views\Category\_NewCategory.cshtml.g.cs
+E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\Razor\Views\Category\Categories.cshtml.g.cs
+E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\Razor\Views\Product\Products.cshtml.g.cs
+E:\Coding Dojo\C#\Asp\ProdsNCats\obj\Debug\net5.0\Razor\Views\Product\Product.cshtml.g.cs

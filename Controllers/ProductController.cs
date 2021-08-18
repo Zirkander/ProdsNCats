@@ -23,27 +23,35 @@ namespace ProdsNCats.Controllers
         [HttpGet("")]
         public IActionResult Redirect()
         {
-            return RedirectToAction("Product");
+            List<Product> allProducts = db.Products
+            .ToList();
+            return View("Products", allProducts);
         }
 
-        [HttpGet("Product")]
+        [HttpGet("Products")]
         public IActionResult Product()
         {
             List<Product> allProducts = db.Products
             .ToList();
-            return View("Product", allProducts);
+            return View("Products", allProducts);
         }
 
-        [HttpPost("/Product/AddProduct")]
+        [HttpPost("/Products/AddProduct")]
         public IActionResult AddProduct(Product newProduct)
         {
             if (ModelState.IsValid == false)
             {
-                return RedirectToAction("Product");
+                return RedirectToAction("Products");
             }
             db.Add(newProduct);
             db.SaveChanges();
-            return RedirectToAction("Product");
+            return RedirectToAction("Products");
+        }
+
+        [HttpGet("/Product/{ProductId}")]
+        public IActionResult GetProduct()
+        {
+            return View("Product/{ProductId}");
         }
     }
 }
