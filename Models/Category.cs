@@ -15,6 +15,8 @@ namespace ProdsNCats.Models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
         public int ProductId { get; set; }
-        public List<CatProd> Categories { get; set; }
+        public Product Products { get; set; }
+        public List<CatProd> CatProds { get; set; }
+        public List<Product> Product { get; set; }
     }
 }

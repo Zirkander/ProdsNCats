@@ -49,9 +49,23 @@ namespace ProdsNCats.Controllers
         }
 
         [HttpGet("/Product/{ProductId}")]
-        public IActionResult GetProduct()
+        public IActionResult GetProduct(int productID)
         {
-            return View("Product/{ProductId}");
+            Product product = db.Products.FirstOrDefault(p => p.ProductId == productID);
+            if (product == null)
+            {
+                return RedirectToAction("Products");
+            }
+            ViewBag.allCategories = db.Categories.ToList();
+            return View("Product", product);
+        }
+
+        [HttpPost("/products/{productId}/addCat")]
+        public IActionResult AddCat(int productId)
+        {
+            // var AddCategory = db.Products
+            // .Include(p => p.Category)
+            return View("Product");
         }
     }
 }
